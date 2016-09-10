@@ -50,8 +50,8 @@ console.log(subtract);
 function oppositeDivide(random2, random1){
 	return random2 * random1;
 }
-var multiply = oppositeDivide(b,a);
-console.log(multiply);
+var product = oppositeDivide(b,a);
+console.log(product);
 
 /**
  *  #5
@@ -62,11 +62,10 @@ console.log(multiply);
  *  "My football team lost X times this week", where `X` is the
  *  value stored in `difference`.
  */
-function checkDifference(random1, random2){
-	return random1 - random2;
+function checkDifference(random1){
+	return "My football team lost " +random1+ " times this week";
 }
-var difference = checkDifference(a,b);
-console.log(difference);
+console.log(checkDifference(subtract));
 /**
  *  #6
  *  Function - checkSum
@@ -76,7 +75,10 @@ console.log(difference);
  *  "I CAN ADDZ X NUMBERS"  where `X` is the value
  *  stored in the variable `sum`.
  */
-
+function checkSum(poopyButt){
+	return "I CAN ADDZ " + poopyButt + " NUMBERS";
+}
+console.log(checkSum(sum));
 
 /**
  *  #7
@@ -86,7 +88,10 @@ console.log(difference);
  *  multiplies it by the number stored at `difference` and
  *  then prints the result to the console.
  */
-
+ function checkProduct(random1, random2){
+ 	return random1*random2;
+ }
+ console.log(checkProduct(product, subtract));
 
 /**
  *  #8
@@ -101,8 +106,11 @@ console.log(difference);
  *  **example:**
  *      addThenSubtract(4, 5, 7); //-> returns 2 because 4 + 5 - 7 = 2
  */
-
-
+ var c = 10;
+function addThenSubtract(random1, random2, random3){
+	return detract(add(random1, random2), random3);
+}
+console.log(addThenSubtract(a, b, c));
 /**
  *  #9
  *  Function - addThenMultiply
@@ -114,8 +122,10 @@ console.log(difference);
  *
  *  Store the return of this function to a variable named `howMany`
  */
-
-
+function addThenMultiply(random1,random2,random3){
+	return oppositeDivide(add(random1,random2),random3);
+}
+console.log(addThenMultiply(a,b,c));
 /**
  *  #10
  *  Function - createFullName
@@ -130,7 +140,13 @@ console.log(difference);
  * Call this function and pass your first and last name into it.
  * Store the return value to a variable named `myFullName`
  */
+ function createFullName(beginning,end){
+ 	return beginning + end;
 
+ }
+var firstName = "Yo Dawg ";
+var lastName = "It's me, Steven Cable";
+console.log(createFullName(firstName,lastName));
 
 /**
  *  #11
@@ -146,8 +162,15 @@ console.log(difference);
  *  **Call this function and pass in a number value.
  *  Store the return value to a variable named** `canDrinkBeer`
  */
-
-
+function verifyDrinkingAge(canDrinkMaybe){
+	if (canDrinkMaybe >= 21){
+		return true;
+	}
+	else
+		return false;
+}
+var canDrinkBeer = verifyDrinkingAge(18);
+console.log(canDrinkBeer);
 /**
  *  #12
  *  Function - throwParty
@@ -157,6 +180,14 @@ console.log(difference);
  *  "The Party will have tons of Cake!" otherwise this message
  *  should be "This Party will have an open bar".
  */
+function throwParty(age){
+	if (age>=21) {
+		return "This Party will be drowning in alcohol";
+	}
+	else 
+		return "You're hecka young and should probably just not show up";
+}
+console.log(throwParty(canDrinkBeer));
 
 
 /**
@@ -178,17 +209,21 @@ console.log(difference);
   *  **example output:**
  *      "Peter Bojanglesloves loves to eat California Burritos"
  */
-
+function eatFood(name, edible){
+	return name + " and I loves to eat " + edible;
+}
+var food = "cinnamon toast crunch";
+createFullName();
+console.log(eatFood(createFullName(firstName,lastName), food));
 
 /**
  *  #14
  *  Function - repeater
  *
- *  This function will return a string to that repeats one of the phrases
+ *  This function will return a string that repeats one of the phrases
  *  below `X` amount of times, where `X` is the value stored at `howMany`.
  *  Inside of this function it will check if
  *  the value of `canDrinkBeer`, if the value is true
  *  the message will be `"Bacon Pancakes, makin' Bacon Pancakes..."`
  *  othewise the message will be `"Let it go.... LET IT GOOOOOOoOoOoOo..."`
  */
-
