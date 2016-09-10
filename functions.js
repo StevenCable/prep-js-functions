@@ -125,7 +125,8 @@ console.log(addThenSubtract(a, b, c));
 function addThenMultiply(random1,random2,random3){
 	return oppositeDivide(add(random1,random2),random3);
 }
-console.log(addThenMultiply(a,b,c));
+var howMany = addThenMultiply(a,b,c)
+console.log(howMany);
 /**
  *  #10
  *  Function - createFullName
@@ -169,7 +170,7 @@ function verifyDrinkingAge(canDrinkMaybe){
 	else
 		return false;
 }
-var canDrinkBeer = verifyDrinkingAge(18);
+var canDrinkBeer = verifyDrinkingAge(22);
 console.log(canDrinkBeer);
 /**
  *  #12
@@ -227,3 +228,18 @@ console.log(eatFood(createFullName(firstName,lastName), food));
  *  the message will be `"Bacon Pancakes, makin' Bacon Pancakes..."`
  *  othewise the message will be `"Let it go.... LET IT GOOOOOOoOoOoOo..."`
  */
+ function repeater(){
+ 	var x;
+ 	if (canDrinkBeer === true){
+ 		x = "Bacon Pancakes, makin' Bacon Pancakes...";
+ 	}
+ 	else{
+ 		x = "Let it go.... LET IT GOOOOOOoOoOoOo...";
+ 	}
+ 	for (var i = 0; i<howMany; i++){
+ 		console.log(x);
+ 	 	 }
+ 	}
+ 	repeater();
+
+
