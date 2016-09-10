@@ -33,7 +33,12 @@ console.log(sum);
  *  This function returns the result of subtracting `b` from `a`.
  *  Store this value in a variable named `difference`
  */
+ function detract(random2, random1){
+ 	return random2 - random1;
 
+ }
+var subtract = detract(b,a);
+console.log(subtract);
 
 /**
  *  #4
@@ -42,7 +47,11 @@ console.log(sum);
  *  This function returns the result of multiplying `b` by `a`.
  *  Store this value in a variable named `product`
  */
-
+function oppositeDivide(random2, random1){
+	return random2 * random1;
+}
+var multiply = oppositeDivide(b,a);
+console.log(multiply);
 
 /**
  *  #5
@@ -53,8 +62,11 @@ console.log(sum);
  *  "My football team lost X times this week", where `X` is the
  *  value stored in `difference`.
  */
-
-
+function checkDifference(random1, random2){
+	return random1 - random2;
+}
+var difference = checkDifference(a,b);
+console.log(difference);
 /**
  *  #6
  *  Function - checkSum
